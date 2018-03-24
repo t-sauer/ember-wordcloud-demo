@@ -1,11 +1,15 @@
 <p>
-  Sort topics by :
-  <button onclick={{action "sort" "label"}}>Name</button>
-  <button onclick={{action "sort" "volume"}}>Volume</button>
-  <button onclick={{action "sort" "sentimentScore"}}>Sentiment Score</button>
+  Sort topics by:
 </p>
-
-<p>Topics sorted by <code>{{sortKey}}</code></p>
+<div class="btn-group" role="group" aria-label="Sort topics">
+  <button class="btn btn-default" onclick={{action "sort" "label"}}>Name</button>
+  <button class="btn btn-default" onclick={{action "sort" "volume"}}>Volume</button>
+  <button class="btn btn-default" onclick={{action "sort" "sentimentScore"}}>Sentiment Score</button>
+</div>
+<hr>
+<p>
+  Topics sorted by <code>{{sortKey}}</code>
+</p>
 
 <ul>
   {{#each sortedTopics as |topic|}}

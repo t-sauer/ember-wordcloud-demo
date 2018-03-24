@@ -1,13 +1,17 @@
-<h2>{{@topic.label}}</h2>
+<div class="panel-heading">
+  <h2>{{@topic.label}}</h2>
+</div>
 
-<ul>
-  <li>Volume: {{@topic.volume}}</li>
-  <li>
-    Sentiment
-    <ul>
-      <li>Positive: {{@topic.sentiment.positive}}</li>
-      <li>Neutral: {{@topic.sentiment.neutral}}</li>
-      <li>Negative: {{@topic.sentiment.negative}}</li>
-    </ul>
-  </li>
-</ul>
+<div class="panel-body">
+  <ul class="list-unstyled">
+    <li>Volume: {{@topic.volume}}</li>
+    <li>
+      Sentiment
+      <ul>
+        <li>Positive: {{@topic.sentiment.positive}}</li>
+        <li>Neutral: {{@topic.sentiment.neutral}}</li>
+        <li>Negative: {{@topic.sentiment.negative}}</li>
+      </ul>
+    </li>
+  </ul>
+</div>
