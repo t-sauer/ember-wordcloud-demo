@@ -1,0 +1,9 @@
+<ul>
+  {{#each @topics as |topic|}}
+    <li>
+      {{#link-to "topic" topic.id}}
+        {{topic.label}}
+      {{/link-to}}
+    </li>
+  {{/each}}
+</ul>

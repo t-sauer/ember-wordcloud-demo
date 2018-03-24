@@ -1,13 +1,5 @@
 <h1>Topics</h1>
 
-<ul>
-  {{#each model as |topic|}}
-    <li>
-      {{#link-to "topic" topic.id}}
-        {{topic.label}}
-      {{/link-to}}
-    </li>
-  {{/each}}
-</ul>
+{{topic-list topics=model}}
 
 {{outlet}}
