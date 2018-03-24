@@ -1,5 +1,14 @@
+<p>
+  Sort topics by :
+  <button onclick={{action "sort" "label"}}>Name</button>
+  <button onclick={{action "sort" "volume"}}>Volume</button>
+  <button onclick={{action "sort" "sentimentScore"}}>Sentiment Score</button>
+</p>
+
+<p>Topics sorted by <code>{{sortKey}}</code></p>
+
 <ul>
-  {{#each @topics as |topic|}}
+  {{#each sortedTopics as |topic|}}
     <li>
       {{#link-to "topic" topic.id}}
         {{topic.label}}
