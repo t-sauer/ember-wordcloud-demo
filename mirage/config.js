@@ -1,4 +1,5 @@
 export default function() {
+  // this.timing = 3000;
   this.namespace = 'api';
 
   this.get('/topics', (schema) => {

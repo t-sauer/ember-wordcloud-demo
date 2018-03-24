@@ -1,3 +1,15 @@
-Topic Route
+<h2>{{model.label}}</h2>
+
+<ul>
+  <li>Volume: {{model.volume}}</li>
+  <li>
+    Sentiment
+    <ul>
+      <li>Positive: {{model.sentiment.positive}}</li>
+      <li>Neutral: {{model.sentiment.neutral}}</li>
+      <li>Negative: {{model.sentiment.negative}}</li>
+    </ul>
+  </li>
+</ul>
 
 {{outlet}}
