@@ -2,9 +2,26 @@
   Sort topics by:
 </p>
 <div class="btn-group" role="group" aria-label="Sort topics">
-  <button class="btn btn-default" onclick={{action "sort" "label"}}>Name</button>
-  <button class="btn btn-default" onclick={{action "sort" "volume"}}>Volume</button>
-  <button class="btn btn-default" onclick={{action "sort" "sentimentScore"}}>Sentiment Score</button>
+  {{#link-to (query-params sort="label")
+    tagName="button"
+    class="btn btn-default"
+  }}
+    Name
+  {{/link-to}}
+
+  {{#link-to (query-params sort="volume")
+    tagName="button"
+    class="btn btn-default"
+  }}
+    Volume
+  {{/link-to}}
+
+  {{#link-to (query-params sort="sentimentScore")
+    tagName="button"
+    class="btn btn-default"
+  }}
+    Sentiment Score
+  {{/link-to}}
 </div>
 <hr>
 <p>

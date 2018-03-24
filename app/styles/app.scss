@@ -7,3 +7,13 @@ body {
 a.active {
   font-weight: bold;
 }
+
+.panel-heading {
+  h2 {
+    margin: 14px 0;
+  }
+  button {
+    float: right;
+    margin: 1px 0;
+  }
+}
